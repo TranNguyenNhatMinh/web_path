@@ -1,0 +1,36 @@
+.appFooter {
+  margin-top: 28px;
+  padding: 28px 18px;
+  border-top: 1px solid color-mix(in oklab, #94a3b8 18%, transparent);
+  background: #0b1220;
+}
+
+.appFooter__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.appFooter__title {
+  margin: 0 0 12px;
+  font-weight: 700;
+  color: #e5e7eb;
+}
+
+.appFooter__tools {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.appFooter__tool {
+  padding: 8px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  border: 1px solid color-mix(in oklab, #94a3b8 22%, transparent);
+  background: color-mix(in oklab, #111827 75%, transparent);
+  color: #cbd5e1;
+}
+

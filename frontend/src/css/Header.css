@@ -1,0 +1,97 @@
+.appHeader {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(10px);
+  background: color-mix(in oklab, #0b1220 78%, transparent);
+  border-bottom: 1px solid color-mix(in oklab, #94a3b8 18%, transparent);
+}
+
+.appHeader__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.appHeader__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 0;
+  background: transparent;
+  color: #e5e7eb;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 12px;
+}
+
+.appHeader__brand:hover {
+  background: color-mix(in oklab, #ffffff 7%, transparent);
+}
+
+.appHeader__logo {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  background: linear-gradient(135deg, #2563eb, #9333ea);
+  color: white;
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.25);
+}
+
+.appHeader__title {
+  font-weight: 700;
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+.appHeader__actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.appButton {
+  border: 1px solid color-mix(in oklab, #94a3b8 22%, transparent);
+  background: color-mix(in oklab, #111827 80%, transparent);
+  color: #e5e7eb;
+  padding: 9px 12px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.04s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.appButton:active {
+  transform: translateY(1px);
+}
+
+.appButton--ghost {
+  background: transparent;
+}
+
+.appButton--primary {
+  border-color: color-mix(in oklab, #2563eb 55%, transparent);
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.25);
+}
+
+.appButton--danger {
+  border-color: color-mix(in oklab, #ef4444 55%, transparent);
+  background: linear-gradient(135deg, #ef4444, #f97316);
+  box-shadow: 0 12px 30px rgba(239, 68, 68, 0.18);
+}
+
+@media (max-width: 540px) {
+  .appHeader__title {
+    display: none;
+  }
+}
+
